@@ -5,8 +5,7 @@ import java.util.List;
 public class BinaryTreePostorderTraversal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 	}
 	
 	public List<Integer> postorderTraversal(TreeNode root) {
