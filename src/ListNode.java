@@ -6,4 +6,14 @@ public class ListNode {
 		val = x;
 		next = null;
 	}
+	
+	public static void print(ListNode head) {
+		ListNode p = head;
+		System.out.print("[");
+		while(p != null) {
+			System.out.print(p.val + " ");
+			p = p.next;
+		}
+		System.out.println("]");
+	}
 }
