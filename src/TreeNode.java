@@ -11,7 +11,7 @@ public class TreeNode {
 		if(node == null) {
 			return;
 		}
-		System.out.print(node.val + "\t");
+		System.out.print(node.val + " ");
 		printPreOrder(node.left);
 		printPreOrder(node.right);
 	}
@@ -21,7 +21,7 @@ public class TreeNode {
 			return;
 		}
 		printInOrder(node.left);
-		System.out.print(node.val + "\t");
+		System.out.print(node.val + " ");
 		printInOrder(node.right);
 	}
 	
@@ -31,6 +31,6 @@ public class TreeNode {
 		}
 		printPostOrder(node.left);
 		printPostOrder(node.right);
-		System.out.print(node.val + "\t");
+		System.out.print(node.val + " ");
 	}
 }
