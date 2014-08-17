@@ -7,6 +7,11 @@ public class ListNode {
 		next = null;
 	}
 	
+	@Override
+	public String toString() {
+		return "Val: " + val;
+	}
+
 	public static void print(ListNode head) {
 		ListNode p = head;
 		System.out.print("[");
