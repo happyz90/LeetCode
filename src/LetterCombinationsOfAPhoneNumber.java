@@ -24,10 +24,10 @@ public class LetterCombinationsOfAPhoneNumber {
 			{'d', 'e', 'f'},
 			{'g', 'h', 'i'},
 			{'j', 'k', 'l'},
-			{'m', 'n', 'o'},
+			{'m', 'n', 'O'},
 			{'p', 'q', 'r', 's'},
 			{'t', 'u', 'v'},
-			{'w', 'x', 'y', 'z'}};
+			{'w', 'X', 'y', 'z'}};
 	
 	private String digits = null;
 	private List<String> result = null;
