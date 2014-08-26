@@ -35,8 +35,11 @@ public class WordLadder {
 			String word = queue.removeFirst();
 			int len = qLen.removeFirst();
 			for(int i = 0; i < n; i++) {
-				char[] w = word.toCharArray();
 				for(char c = 'a'; c <= 'z'; c++) {
+					char[] w = word.toCharArray();
+					if(w[i] == c) {
+						continue;
+					}
 					w[i] = c;
 					String newWord = new String(w);
 					if(newWord.equals(end)) {
