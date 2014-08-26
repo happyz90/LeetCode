@@ -17,6 +17,10 @@ public class WordLadder {
 		System.out.println(new WordLadder().ladderLength(start, end, dict));
 	}
 	
+	/*
+	 * 不能使用o(n*n)的方法把每个词作为节点构成图，会超时
+	 * 要把每个词的每个字母各改变一次的单词构成一张图o(n*26*length)
+	 */
 	public int ladderLength(String start, String end, Set<String> dict) {
 		int n = start.length();
 		
